@@ -13,9 +13,6 @@ To start Metro, run the following command from the _root_ of your React Native p
 ```bash
 # using npm
 npm start
-
-# OR using Yarn
-yarn start
 ```
 
 ## Step 2: Start your Application
@@ -27,9 +24,6 @@ Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _roo
 ```bash
 # using npm
 npm run android
-
-# OR using Yarn
-yarn android
 ```
 
 ### For iOS
@@ -37,9 +31,6 @@ yarn android
 ```bash
 # using npm
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
@@ -63,6 +54,16 @@ You've successfully run and modified your React Native App. :partying_face:
 
 - If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
 - If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+
+# Running StoryBook
+
+Storybook can't be used in parallel with app on React Native CLI. To run Storybook, replace the contents of `App.tsx` with the line:
+
+```jsx
+export {default} from './.storybook'
+```
+
+(yes, I mean all)
 
 # Troubleshooting
 
