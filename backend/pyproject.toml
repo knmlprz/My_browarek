@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "mojbrowarek"
+version = "0.0.1"
+description = ""
+authors = ["Damian Kobyliński <damiankob12@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
