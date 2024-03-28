@@ -1,33 +1,22 @@
 ---
 name: Default issue template
-about: 'Prosze o używanie tego templateu ! '
-title: New issue
+about: 'Proszę o używanie tego templateu ! '
+title: Nowy pull request
 labels: ''
 assignees: ''
 
 ---
 
-# Opis
+## Opis twoich zmian
 
-Napisz czego dotyczy to issue co ma nowego wprowdzić, usprawnić, naprawić.
+Aby wykonać mojego taska musiałem zmienić X, Y, Z, itd
 
-# Zadanie
+## Nymer twojego issue
 
-- [ ] Zadanie 1 do wykoania 
+close #3
 
-- [ ] Zadanie 1 do wykoania 
-
-- [x] itd...
-
-
-# Jak może wyglądać rozwiązanie 
-
-Jak potencjalnie może wyglądć rozwiącanie czego użyć co ma zostać w nim zawartę wiecej od strony techniczej.
-
-# Co blokuje 
-
-Napisz jakie inne etapy blokują wykoanie zadania jeśli jest to możlie zlinkuj  je np. #3.
-
-#Tips 
-
-Linki, dokumentacja, przydatne wskazówki.
+## Checklist przd pull requestem
+- [ ] Przeprowadziłem samodzielny przegląd mojego kodu.
+- [ ] Kod jest odpowiednio sformatowany.
+- [ ] Moje zmiany przeszły testy.
+- [ ] Jeśli jest to duża zmiana, napisałem jej dobry opis.
