@@ -1,0 +1,15 @@
+openapi: 3.0.3
+info:
+  title: My Browarek API
+  version: 0.0.0
+paths: 
+  api/group/:
+    get:
+      operationsId: my_browarek_api_groups
+      description: My Browarek Groups
+      tags:
+        - user
+      responses:
+        '200':
+          description: 'Everything fine'
+components: 
