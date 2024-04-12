@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Constants from 'expo-constants'
 
-export default function App() {
+function App() {
   return (
     <View className="flex-1 items-center justify-center">
       <Text>Open up App.tsx to start working on your app!</Text>
@@ -9,3 +10,10 @@ export default function App() {
     </View>
   );
 }
+
+let entryPoint = App;
+if (Constants.expoConfig?.extra && Constants.expoConfig.extra.storybookEnabled === 'true') {
+  entryPoint = require('./.storybook').default;
+}
+
+export default entryPoint;
