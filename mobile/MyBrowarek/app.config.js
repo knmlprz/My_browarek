@@ -1,7 +1,10 @@
-{
+module.exports = {
   "expo": {
     "name": "MyBrowarek",
     "slug": "MyBrowarek",
+    extra: {
+      sotybookEnabled: process.env.STORYBOOK_ENABLED
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
