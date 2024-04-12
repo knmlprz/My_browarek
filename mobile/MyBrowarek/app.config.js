@@ -3,7 +3,7 @@ module.exports = {
     "name": "MyBrowarek",
     "slug": "MyBrowarek",
     extra: {
-      sotybookEnabled: process.env.STORYBOOK_ENABLED
+      storybookEnabled: process.env.STORYBOOK_ENABLED
     },
     "version": "1.0.0",
     "orientation": "portrait",
