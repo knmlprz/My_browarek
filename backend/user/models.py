@@ -5,7 +5,7 @@ from django.utils import timezone
 
 
 def validate_birth_date(birth_date):
-    today = timezone.now
+    today = timezone.now().date()
     age = (today - birth_date).days / 365
     if age < 18:
         raise exceptions.ValidationError("Użytkownik musi być pełnoletni")
@@ -25,4 +25,4 @@ class UserProfile(models.Model):
     birthDate = models.DateField(default=timezone.now, blank=False, validators=[validate_birth_date])
 
     def __str__(self):
-        return {UserProfile.user}
+        return f"{self.user}"
