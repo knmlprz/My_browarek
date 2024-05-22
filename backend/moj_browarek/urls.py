@@ -5,10 +5,12 @@ from rest_framework import routers
 
 # imports
 from user.views import UserViewSet, UserProfileViewSet
+from beers.views import BeerView
 
 router = routers.DefaultRouter()
 router.register(r"users", UserViewSet)
 router.register(r"profiles", UserProfileViewSet)
+router.register(r"beers", BeerView)
 
 urlpatterns = [
     path("admin/", admin.site.urls),

@@ -5,7 +5,8 @@ from .models import UserProfile
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ["id", "username", "email", "first_name", "last_name"] ## todo add group field in the future
+        fields = ["id", "username", "email", "first_name", "last_name"]
+        ## todo add group field in the future
 
 
 class UserProfileSerializer(serializers.HyperlinkedModelSerializer):
